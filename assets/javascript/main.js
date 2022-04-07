@@ -41,36 +41,37 @@ const team = [
 
   // stampare su console
   // -1 Wayne Barnett
-  console.log("** Info Wayne Barnett **");
-  console.log(team[0].name);
-  console.log(team[0].role);
-  console.log(team[0].image);
+  for(let i = 0; i<team.length; i++){
+      console.log(team[i].name);
+      console.log(team[i].role);
+      console.log(team[i].image);
+  }
 
-console.log("** info Angela Caroll**");
-  //- 2 Angela Caroll
-  console.log(team[1].name);
-  console.log(team[1].role);
-  console.log(team[1].image);
+// console.log("** info Angela Caroll**");
+//   //- 2 Angela Caroll
+//   console.log(team[1].name);
+//   console.log(team[1].role);
+//   console.log(team[1].image);
 
 
-  console.log("** info Walter Gorn");
-  //- 3 Walter Gordon
-  console.log(team[2].name);
-  console.log(team[2].role);
-  console.log(team[2].image);
+//   console.log("** info Walter Gorn");
+//   //- 3 Walter Gordon
+//   console.log(team[2].name);
+//   console.log(team[2].role);
+//   console.log(team[2].image);
 
-  console.log("** info Angela Lopez");
-  // -4 Angela Lopez
-  console.log(team[3].name);
-  console.log(team[3].role);
-  console.log(team[3].image);
+//   console.log("** info Angela Lopez");
+//   // -4 Angela Lopez
+//   console.log(team[3].name);
+//   console.log(team[3].role);
+//   console.log(team[3].image);
 
-  console.log("info ** Scott Estrada");
-  console.log(team[4].name);
-  console.log(team[4].role);
-  console.log(team[4].image);
+//   console.log("info ** Scott Estrada");
+//   console.log(team[4].name);
+//   console.log(team[4].role);
+//   console.log(team[4].image);
 
-  console.log("info ** Barbara Ramos");
-  console.log(team[5].name);
-  console.log(team[5].role);
-  console.log(team[5].image);
+//   console.log("info ** Barbara Ramos");
+//   console.log(team[5].name);
+//   console.log(team[5].role);
+//   console.log(team[5].image);
