@@ -2,12 +2,45 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
+:root{
+    /* colore sfondo background */
+    --background : rgba(245, 245, 241, 1);
+}
+body{
+    background-color: var(--background);
+}
+h1{
+    text-align: center;
+    margin-top:2rem
+}
 .team{
+    
     display:Flex;
-    width: 1200;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.user{
+    
+    width: 350px;
+    height: 400px;
+    
+    margin:10px;
+    border:1px solid black;
+    box-shadow: 0 0 10px rgb(221, 227, 230);
+    border-radius: 10px;
+}
+.container{
+    width: 1200px;
+    margin:2rem auto;
+}
+
+.img{
+    height: 70%;
+    width: 100%;
+    background-color: red;
 }
