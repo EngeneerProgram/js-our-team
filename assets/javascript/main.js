@@ -50,10 +50,18 @@ const team = [
 const img = document.querySelectorAll(".img");
 console.log(img);
   for(let i = 0; i<team.length; i++){
-    const img = document.querySelectorAll(".img");
-    let image = document.createElement("img");
-    image.src="barbara-ramos-graphic-designer.jpg";
-    image.append(img);
+    creareCard();
+    
+    
+    
     
   }
 
+function creareCard(){
+  //creare il div contente la card
+  let card = document.createElement("div");
+  console.log(card);
+  card.style.width = "250px";
+  card.style.height= "300px";
+ 
+}
