@@ -68,10 +68,31 @@ img{
 }
 h2{
     padding-bottom: 3rem;
+    text-align: center;
 }
 .insert_img{
     display:flex;
     flex-direction: column;
     justify-content: center;
     
+}
+
+.add_member{
+    flex-direction: column;
+    display:flex;
+    height: 50vh;
+    align-items: center;
+}
+
+input{
+    margin:10px;
+    font-size: 20px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.btn{
+    padding: 5px 20px;
 }

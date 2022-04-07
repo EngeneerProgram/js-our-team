@@ -53,27 +53,28 @@ const team = [
       
       container.innerHTML += `
       <div class="card">
-      <img src= "assets/img/${team[i].image}">
-      
-        <div class="item">
-          <p>${team[i].name}</p>
-          <p>${team[i].role}  </p>
-          
+        <img src= "assets/img/${team[i].image}">
+        
+          <div class="item">
+            <p>${team[i].name}</p>
+            <p>${team[i].role}  </p>
+            
           </div>
-      </div>`;
+      </div>`
     
-    //creare il div contente la card
+   
     
-    // let card = document.createElement("div");
-    // container.append(card);
-    // card.style.width ="200px";
-    // card.style.height = "300px";
-    // console.log(card);
-    // let img = document.createElement("img");
-    // console.log(img);
-    // card.innerHTML = ("prova")
-    
-    
-    
-  }
-
+    }
+  
+  
+  // section add member
+  // 1- Prendere il btn dalla dom
+  const add = document.querySelector(".btn");
+  console.log(add);
+  add.addEventListener("click", function(){
+    console.log("ok");
+    name_member = document.querySelector(".nome").value;
+    role_member = document.querySelector(".ruolo").value;
+    img_profile = document.querySelector(".img").value;
+    console.log(name_member, role_member, img_profile);
+  })
