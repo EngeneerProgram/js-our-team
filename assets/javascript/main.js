@@ -47,21 +47,32 @@ const team = [
       console.log(team[i].role);
       console.log(team[i].image);
   }
-const img = document.querySelectorAll(".img");
-console.log(img);
-  for(let i = 0; i<team.length; i++){
-    creareCard();
+  const container= document.querySelector(".container");
+  console.log(container);
+    for(let i = 0; i<team.length; i++){
+
+      container.innerHTML += `
+      <div class="card">
+      
+        <div class="item">
+          <p>${team[i].name  }</p>
+          <p>${team[i].role }  </p>
+          
+          </div>
+      </div>`;
     
+    //creare il div contente la card
+    
+    // let card = document.createElement("div");
+    // container.append(card);
+    // card.style.width ="200px";
+    // card.style.height = "300px";
+    // console.log(card);
+    // let img = document.createElement("img");
+    // console.log(img);
+    // card.innerHTML = ("prova")
     
     
     
   }
 
-function creareCard(){
-  //creare il div contente la card
-  let card = document.createElement("div");
-  console.log(card);
-  card.style.width = "250px";
-  card.style.height= "300px";
- 
-}
