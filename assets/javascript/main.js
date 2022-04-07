@@ -50,13 +50,14 @@ const team = [
   const container= document.querySelector(".container");
   console.log(container);
     for(let i = 0; i<team.length; i++){
-
+      
       container.innerHTML += `
       <div class="card">
+      <img src= "assets/img/${team[i].image}">
       
         <div class="item">
-          <p>${team[i].name  }</p>
-          <p>${team[i].role }  </p>
+          <p>${team[i].name}</p>
+          <p>${team[i].role}  </p>
           
           </div>
       </div>`;
