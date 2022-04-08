@@ -53,13 +53,15 @@ const team = [
       
       container.innerHTML += `
       <div class="card">
-        <img src= "assets/img/${team[i].image}">
+        <img src ="assets/img/${team[i].image}">
         
           <div class="item">
             <p>${team[i].name}</p>
             <p>${team[i].role}  </p>
             
           </div>
+          
+        </div>
       </div>`
     
    
@@ -77,4 +79,16 @@ const team = [
     role_member = document.querySelector(".ruolo").value;
     img_profile = document.querySelector(".img").value;
     console.log(name_member, role_member, img_profile);
+
+    //creare nuovo oggetto
+    const new_member = {
+      nome : name_member,
+      role : role_member,
+      img : img_profile
+      
+    }
+    console.log(new_member)
+    team.push(new_member);
+    console.log(team);
   })
+
